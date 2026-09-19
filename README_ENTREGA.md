@@ -24,5 +24,5 @@ O acesso público permite usar/visualizar o app. O acesso ao editor e a opção 
 ## GitHub e AI Studio
 
 - Repositório público: https://github.com/6lucassilvaaa/aula-7-opal-release-notes
-- Pipeline final aprovado: https://github.com/6lucassilvaaa/aula-7-opal-release-notes/actions/runs/35411628791
+- Pipeline final aprovado: https://github.com/6lucassilvaaa/aula-7-opal-release-notes/actions/runs/35412602536
 - Prompt do AI Studio: consulte `E4_AI_Studio/LINK_AI_STUDIO.txt`.
