@@ -1,6 +1,9 @@
 name: Prompt quality gate
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     paths:
       - "E4_AI_Studio/prompts/**"
@@ -38,4 +41,3 @@ jobs:
         with:
           name: prompt-evaluation
           path: E5_Pipeline/logs/
-
