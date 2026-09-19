@@ -10,7 +10,7 @@
 - `E1_MAPA_DE_OPORTUNIDADES.md`: mapa e priorização de oportunidades.
 - `E2_Opal/`: link, resultados, referências e captura real do fluxo.
 - `docs/opal/release-notes.md`: ficha técnica e governança (E3).
-- `E4_AI_Studio/`: prompt versionado, JSON Schema, código e comparação Opal × AI Studio.
+- `E4_AI_Studio/`: prompt salvo no AI Studio, JSON Schema, código gerado/adaptado e resultados reais dos 3 testes.
 - `E5_Pipeline/`: avaliador, conjunto dourado e logs de aprovação/reprovação.
 - `.github/workflows/prompt-quality.yml`: pipeline de CI.
 - `E6_METRICAS_CUSTO_EVOLUCAO.md`: métricas, orçamento e plano de evolução.

@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import { GoogleGenAI } from "@google/genai";
 
-const MODEL = "gemini-3.1-flash-lite";
+const MODEL = "gemini-flash-lite-latest";
 
 async function loadPrompt() {
   return fs.readFile(new URL("../prompts/release-notes-v1.md", import.meta.url), "utf8");
