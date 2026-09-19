@@ -1,0 +1,11 @@
+{
+  "name": "carparts-prompt-quality-gate",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "node --check scripts/eval-prompt.mjs",
+    "test:prompt": "node scripts/eval-prompt.mjs",
+    "test:prompt:fail-demo": "node scripts/eval-prompt.mjs --inject-failure"
+  }
+}
+

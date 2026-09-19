@@ -1,0 +1,24 @@
+Execução: node scripts/eval-prompt.mjs --inject-failure
+Data: 18/09/2026
+Node: v24.20.0
+
+Prompt quality gate: 8/10 (80%)
+FAIL G01 palavras=9
+  obrigatórios ausentes: Adiciona, PDF
+  termos proibidos: a1b2c3d, classe
+FAIL G02 palavras=2
+  obrigatórios ausentes: Corrige, números de peça, busca
+  termos proibidos: SKU, bugfix
+PASS G03 palavras=8
+PASS G04 palavras=10
+PASS G05 palavras=10
+PASS G06 palavras=12
+PASS G07 palavras=11
+PASS G08 palavras=9
+PASS G09 palavras=10
+PASS G10 palavras=17
+Limiar: 90%
+
+Exit code: 1
+Resultado: REPROVADO DE PROPÓSITO
+

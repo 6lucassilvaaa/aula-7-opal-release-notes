@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReleaseNotesCarparts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["versao", "data", "resumo", "itens", "revisar", "rodape"],
+  "properties": {
+    "versao": { "type": "string", "minLength": 1 },
+    "data": { "type": "string", "format": "date" },
+    "resumo": { "type": "string", "maxLength": 360 },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tipo", "resumo", "modulo"],
+        "properties": {
+          "tipo": { "enum": ["Nova funcionalidade", "Correção", "Segurança", "Interna"] },
+          "resumo": { "type": "string", "minLength": 1 },
+          "modulo": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "revisar": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["entrada", "motivo"],
+        "properties": {
+          "entrada": { "type": "string" },
+          "motivo": { "type": "string" }
+        }
+      }
+    },
+    "rodape": {
+      "const": "Documento gerado com apoio de IA e revisado pela equipe de engenharia da Carparts antes do envio."
+    }
+  }
+}
+

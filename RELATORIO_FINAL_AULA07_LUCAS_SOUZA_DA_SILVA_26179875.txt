@@ -1,0 +1,105 @@
+========================================================================
+SENAI · INTEGRAÇÃO E ENTREGA CONTÍNUA – DEVOPS · 2º ADS
+AULA 07 · Google Opal: Mini-apps de IA, Fluxo Visual, AI Studio e CI/CD
+========================================================================
+Aluno: Lucas Souza da Silva
+RA: 26179875
+Data: 18/09/2026
+
+RESUMO
+  Exercício guiado ....... 10/10
+  Sequência .............. correta (1 tentativa)
+  Quiz ................... 12/12
+  Dissertativas .......... 6/6 concluídas
+  Plano de entrega ....... 6/6 concluído
+
+========================================================================
+09 · EXERCÍCIO GUIADO — ONDE ISSO ACONTECE?
+========================================================================
+01. Montar fluxo User Input → Generate → Output e publicar com link.
+    Resposta: Opal [correta]
+02. Obter JavaScript equivalente pelo botão Get code.
+    Resposta: AI Studio [correta]
+03. Avaliar dez casos no pull request e bloquear aprovação abaixo de 90%.
+    Resposta: Pipeline CI/CD [correta]
+04. Criar mini-app em My Gems from Labs.
+    Resposta: Gemini app [correta]
+05. Guardar GEMINI_API_KEY como segredo e publicar no Cloud Run.
+    Resposta: AI Studio [correta]
+06. Abrir demo da galeria e usar Remix.
+    Resposta: Opal [correta]
+07. Promover de homologação para produção após aprovação registrada.
+    Resposta: Pipeline CI/CD [correta]
+08. Restaurar versão anterior pelo histórico do Drive.
+    Resposta: Opal [correta]
+09. Ativar Structured output, JSON Schema e ajustar parâmetros.
+    Resposta: AI Studio [correta]
+10. Revisar passos, iniciar app e abrir editor avançado a partir da conversa.
+    Resposta: Gemini app [correta]
+
+========================================================================
+10 · SEQUÊNCIA — DA IDEIA À PRODUÇÃO
+========================================================================
+01. Descrever a ideia no editor de linguagem natural do Opal.
+02. Revisar passos, nomes e referências @ no editor visual.
+03. Testar no Preview e console e publicar para validação interna.
+04. Levar o prompt validado ao AI Studio e fixar modelo, instruções e schema.
+05. Usar Get code e versionar prompt, script e conjunto dourado, sem a chave.
+06. Abrir pull request para disparar o pipeline.
+07. Executar lint, testes, scan de segredos e avaliação do prompt.
+08. Implantar em homologação e executar smoke test.
+09. Registrar aprovação, promover para produção e monitorar custo e qualidade.
+
+========================================================================
+11 · QUIZ
+========================================================================
+Q01. B — User Input, Generate e Output.
+Q02. D — Com o caractere @.
+Q03. A — No Google Drive; restaurar apaga permanentemente versões mais novas.
+Q04. C — Escolha autônoma de ferramentas/modelos, memória, roteamento e chat.
+Q05. D — Privada até ser compartilhada ou publicada.
+Q06. A — O Google afirma não usar o conteúdo para treinar modelos; pode haver revisão limitada de suporte.
+Q07. C — Conta pessoal, 18+, Gemini web no computador e idioma inglês.
+Q08. B — Promover o prompt a código com Gemini API e chamá-lo no pipeline.
+Q09. D — Como segredo no servidor, nunca no navegador.
+Q10. A — Standard keys passam a ser rejeitadas; novas chaves são auth keys.
+Q11. C — A saída generativa varia entre execuções e modelos.
+Q12. B — Até dois apps no Starter Tier, observadas as regras de elegibilidade.
+
+========================================================================
+12 · QUESTÕES DISSERTATIVAS
+========================================================================
+D1. No Opal, o código é representado pelos prompts, pelas referências com @ e pelas conexões do fluxo visual. O versionamento ocorre no histórico linear do Google Drive, sem branches, diff ou pull request, e os testes acontecem manualmente no Preview e no console. No pipeline como código, Jenkinsfile ou YAML ficam no Git, passam por revisão e executam verificações reproduzíveis. Assim, o Opal acelera descoberta e prototipação, mas prompts aprovados devem ser transferidos para o repositório, revisados e avaliados automaticamente antes da produção.
+
+D2. O fluxo de release notes começa com um User Input obrigatório contendo os commits. Um asset guarda o guia de estilo. O primeiro Generate usa Gemini Flash para classificar rapidamente as mudanças e referencia a entrada e o guia com @. O segundo Generate usa Gemini Pro para redigir o texto profissional, pois exige maior qualidade linguística. As saídas exibem uma página e salvam um Google Docs. Passos recebem nomes descritivos, categorias vazias são omitidas e as conexões não formam ciclos.
+
+D3. O Opal é experimental, não oferece API pública, webhook, exportação de código ou hospedagem própria documentados e possui versionamento linear e testes manuais. Ele não deve ser usado com dados reais ou processos críticos. A equipe promove o mini-app quando a saída chega a clientes, precisa rodar sem pessoa no meio ou exige auditoria. Nesse ponto, fixa modelo e schema no AI Studio, versiona prompt e conjunto dourado no Git e cria gates de CI antes da implantação.
+
+D4. A integração simples com Drive e Workspace facilita o surgimento de shadow IT: apps sem dono, links públicos esquecidos e dados confidenciais copiados em prompts. A política da Carparts deve permitir somente dados públicos ou fictícios, manter inventário com responsável e data de revisão, desativar edição pública, testar entradas de referência e exigir revisão humana. O compartilhamento do arquivo do Drive também deve ser controlado. Experimentos não substituem ferramentas corporativas aprovadas para clientes, pedidos, preços, ERP ou segredos.
+
+D5. O stage de avaliação recebe o prompt versionado e pelo menos dez casos no conjunto dourado. Cada caso verifica termos obrigatórios, termos proibidos, limite de palavras e contrato JSON. O pipeline falha quando a aprovação fica abaixo de 90%. A auth key fica em secret do GitHub ou credencial do Jenkins, nunca no repositório ou no log. Para controlar custo, a avaliação roda apenas quando prompt, schema, casos ou código mudam, usa primeiro um modelo Flash e registra tokens e custo estimado.
+
+D6. O Opal serve para descobrir a necessidade e validar rapidamente a experiência com usuários e dados fictícios. O Chat do AI Studio fixa modelo, instruções e structured output e permite obter código. O Build pode gerar uma aplicação full-stack, manter segredos no servidor e sincronizar com GitHub. O Antigravity ajuda a evoluir o código por pull requests. Jenkins ou GitHub Actions aplicam lint, testes, scan de segredos, avaliação do prompt, homologação e aprovação registrada. A passagem entre etapas depende de valor comprovado, qualidade e governança.
+
+========================================================================
+13 · PRÁTICA CARPARTS — PLANO DOS ENTREGÁVEIS
+========================================================================
+E1. Vou avaliar seis tarefas da equipe e classificá-las por valor, risco e custo. A evidência será uma tabela priorizada, destacando quais permanecem como apoio no Opal, quais avançam para a esteira e quais não devem usar IA.
+
+E2. Vou publicar o Release Notes Carparts com User Input, dois Generate, asset de estilo e saídas em página e Google Docs. Anexarei o link, capturas do editor, do Preview e do console executando as três entradas de referência.
+
+E3. Vou registrar finalidade, responsável, fluxo, modelos, permissões, dados permitidos, dados proibidos, critérios de aceite, casos de referência e revisão mensal em docs/opal/release-notes.md. O arquivo versionado será a evidência de governança.
+
+E4. Vou refinar o prompt no AI Studio, exigir JSON conforme schema, obter o código e adaptá-lo em src. O prompt será salvo em prompts, a comparação com o Opal será documentada e nenhuma chave será incluída no Git.
+
+E5. Vou criar um workflow com lint, scan de segredos e avaliação de dez casos com limiar de 90%. Entregarei o conjunto dourado, o script, CODEOWNERS e logs reais de uma execução aprovada e outra reprovada propositalmente.
+
+E6. Vou comparar quatro horas manuais com vinte minutos usando o Opal, estimar consumo mensal e definir alertas abaixo de US$ 300. Também documentarei critérios objetivos para manter ou promover o futuro assistente comercial.
+
+========================================================================
+LINK DO APP
+========================================================================
+https://opal.google/app/1iXJvi_5238_nN--HD07X_sGK6Mg3M5uI
+
+Documento gerado com apoio de IA e revisado para a entrega acadêmica.
+========================================================================

@@ -1,0 +1,41 @@
+name: Prompt quality gate
+
+on:
+  pull_request:
+    paths:
+      - "E4_AI_Studio/prompts/**"
+      - "E4_AI_Studio/schemas/**"
+      - "E5_Pipeline/eval/**"
+      - "E5_Pipeline/scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: E5_Pipeline
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Lint
+        run: npm run lint
+      - name: Scan de segredos
+        uses: gitleaks/gitleaks-action@v2
+      - name: Avaliar conjunto dourado
+        env:
+          MIN_PASS_RATE: "0.90"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run test:prompt
+      - name: Guardar relatório
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-evaluation
+          path: E5_Pipeline/logs/
+

@@ -1,0 +1,20 @@
+Execução: node scripts/eval-prompt.mjs
+Data: 18/09/2026
+Node: v24.20.0
+
+Prompt quality gate: 10/10 (100%)
+PASS G01 palavras=8
+PASS G02 palavras=9
+PASS G03 palavras=8
+PASS G04 palavras=10
+PASS G05 palavras=10
+PASS G06 palavras=12
+PASS G07 palavras=11
+PASS G08 palavras=9
+PASS G09 palavras=10
+PASS G10 palavras=17
+Limiar: 90%
+
+Exit code: 0
+Resultado: APROVADO
+

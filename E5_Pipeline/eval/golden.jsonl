@@ -1,0 +1,11 @@
+{"id":"G01","candidate":"Adiciona anexos em PDF na abertura do pedido.","required":["Adiciona","PDF","pedido"],"forbidden":["a1b2c3d","classe","library"]}
+{"id":"G02","candidate":"Corrige números de peça duplicados na busca por aplicação.","required":["Corrige","números de peça","busca"],"forbidden":["9f8e7d6","SKU","bugfix"]}
+{"id":"G03","candidate":"Bloqueia arquivos executáveis no portal de pedidos B2B.","required":["Bloqueia","portal de pedidos B2B"],"forbidden":["CVE","vetor","7d6e5f4"]}
+{"id":"G04","candidate":"Exibe o prazo de entrega estimado por item na cotação.","required":["Exibe","prazo de entrega","cotação"],"forbidden":["ETA","RFQ","8b9c0d1"]}
+{"id":"G05","candidate":"Corrige a listagem de pedidos com mais de 500 itens.","required":["Corrige","pedidos","500"],"forbidden":["timeout","3a4b5c6","arquivo"]}
+{"id":"G06","candidate":"Corrige o arredondamento do valor total na segunda via da nota fiscal.","required":["Corrige","nota fiscal","arredondamento"],"forbidden":["NF-e","b7c8d9e","hotfix"]}
+{"id":"G07","candidate":"Reforça a proteção de sessões expiradas no portal de pedidos B2B.","required":["Reforça","sessões expiradas","portal de pedidos B2B"],"forbidden":["security patch","c8d9e0f","exploit"]}
+{"id":"G08","candidate":"Adiciona filtro por montadora compatível no catálogo de peças.","required":["Adiciona","montadora","catálogo de peças"],"forbidden":["a2b3c4d","SKU","catalogo SKU"]}
+{"id":"G09","candidate":"Revisar: a mensagem não informa impacto para a montadora cliente.","required":["Revisar","montadora cliente"],"forbidden":["inventa","garante","revolucionário"]}
+{"id":"G10","candidate":"Documento gerado com apoio de IA e revisado pela equipe de engenharia da Carparts antes do envio.","required":["Documento gerado com apoio de IA","Carparts","antes do envio"],"forbidden":["Carparts Systems","automaticamente aprovado"]}
+
