@@ -1,0 +1,7 @@
+Prompt: Release Notes Carparts — Aula 7
+URL: https://aistudio.google.com/prompts/1yVblNgYEc7mf1gFiuCyh5TqMHXIxpnpZ?project=gen-lang-client-0481174563
+Modelo: gemini-3.1-flash-lite
+Saída estruturada: ativada com JSON Schema
+Get code: TypeScript gerado e adaptado em src/generate-release-notes.mjs
+
+Observação: o prompt está salvo na conta Google do aluno. O código usa GEMINI_API_KEY via variável de ambiente; nenhuma chave é versionada.

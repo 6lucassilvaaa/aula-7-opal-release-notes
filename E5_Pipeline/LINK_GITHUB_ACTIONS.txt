@@ -1,0 +1,7 @@
+Repositório público: https://github.com/6lucassilvaaa/aula-7-opal-release-notes
+Workflow: https://github.com/6lucassilvaaa/aula-7-opal-release-notes/actions/workflows/prompt-quality.yml
+Execução aprovada: https://github.com/6lucassilvaaa/aula-7-opal-release-notes/actions/runs/35411166089
+Commit validado: 17097e8
+Resultado: sucesso em 18 segundos
+
+O workflow executou lint, verificação de segredos, avaliação dos 10 casos dourados e publicação dos logs como artefato.

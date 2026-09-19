@@ -20,3 +20,9 @@
 https://opal.google/app/1iXJvi_5238_nN--HD07X_sGK6Mg3M5uI
 
 O acesso público permite usar/visualizar o app. O acesso ao editor e a opção de remix estão desativados.
+
+## GitHub e AI Studio
+
+- Repositório público: https://github.com/6lucassilvaaa/aula-7-opal-release-notes
+- Pipeline aprovado: https://github.com/6lucassilvaaa/aula-7-opal-release-notes/actions/runs/35411166089
+- Prompt do AI Studio: consulte `E4_AI_Studio/LINK_AI_STUDIO.txt`.
